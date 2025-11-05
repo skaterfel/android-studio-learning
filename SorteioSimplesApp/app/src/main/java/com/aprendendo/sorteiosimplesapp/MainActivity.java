@@ -28,9 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void sorteador(View view){
 
-        Random random = new Random();
+
         TextView textView = findViewById(R.id.textoSorteado);
-        textView.setText("O GANHADOR É: " + random.nextInt(11));
+        // Random random = new Random();
+        //textView.setText("O GANHADOR É: " + random.nextInt(11));
+        //pode ser usado tambem da forma abaixo, sem precisar intanciar a classe Random:
+        textView.setText("O GANHADOR É O NÚMERO: " + new Random().nextInt(11));
     }
 
 
