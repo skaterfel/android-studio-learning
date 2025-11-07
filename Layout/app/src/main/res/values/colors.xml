@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="botao_cadastro">#00cc00</color>
+
+    <color name="colorPrimary">#975D49</color>
+    <color name="colorPrimaryDark">#FF9800</color>
+    <color name="colorAccent">#FFEB3B</color>
+    <color name="colorFundo">#B35263A2</color>
+    <color name="colorText">#CCC1521A</color>
+    <color name="colorTitulo">#CC5D1AC1</color>
+
+</resources>
