@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Cores para o Projeto Netflix! -->
+    <color name="colorPrimary">#FFD61E21</color>
+    <color name="colorPrimaryDark">#FF780000</color>
+    <color name="colorAccent">#FFFF4F4F</color>
+    <color name="fundo_app">#FF393939</color>
+
+
 </resources>
