@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Netflix</string>
+    <string name="menu_episodeos">episodeos</string>
 </resources>
