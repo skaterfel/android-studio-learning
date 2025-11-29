@@ -84,6 +84,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="342dp"
+        android:layout_height="61dp"
+        android:text="Proximos passos: Criar tela de cadastro, troca de user, se tiver user ir para calcular, se nao ir pro cadastro"
+        app:layout_constraintBottom_toTopOf="@+id/res"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

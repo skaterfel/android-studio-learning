@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primatyColor">#4CB963</color>
+    <color name="primaryColorEscura">#3A8E4C</color>
+    <color name="primaryColorClara">#A7E4BD</color>
+
+    <color name="secundaryColor">#1A4D6E</color>
+    <color name="secundaryColorClara">#3E7396</color>
+    <color name="secundaryColorEscura">#122F43</color>
+
+    <color name="fundoClaro">#FFFFFF</color>
+    <color name="cardClaro">#F6F6F6</color>
+    <color name="textoClaro">#222222</color>
+    <color name="textSecundatyClaro">#555555</color>
+
+
+    <color name="fundoEscuro">#1c1c1e</color>
+    <color name="cardEscuro">#2c2c2e</color>
+    <color name="textoEscuro">#ffffff</color>
+    <color name="textSecundatyEscuro">#cfcfcf</color>
+
+
+
+
+
+
+</resources>

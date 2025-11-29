@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#D61E21</color>
+    <color name="colorPrimaryDark">#780000</color>
+    <color name="colorAccent">#ff4f4f</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fundo_app2">#39FF3939</color>
+    <color name="fundo_app_color">#FF393939</color>
+</resources>
