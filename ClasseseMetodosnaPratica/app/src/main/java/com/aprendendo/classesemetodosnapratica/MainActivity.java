@@ -16,22 +16,37 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.nome = "Felipe";
-        funcionario.salario = 3500.00;
+        Pessoa p = new Pessoa();
+        p.exibirDados("Iori");
+        p.exibirDados(5,"Iori");
 
-        double ss = funcionario.recuperarSalario(150.0, 20);
-        System.out.println(ss);
 
-//        Casa casa = new Casa();
-//        casa.cor = "verde";
-//        System.out.println(casa.cor);
-//        casa.abrirPorta();
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
+        /* Funcionario funcionario = new Funcionario();
+        funcionario.nome = "Felipe";
+        funcionario.salario = 3500.00;
+
+        double ss = funcionario.recuperarSalario(150.0, 20);
+        System.out.println(ss);
+
+        */
+
+//        Casa casa = new Casa();
+//        casa.cor = "verde";
+//        System.out.println(casa.cor);
+//        casa.abrirPorta();
+
     }
+
+
+
 }
