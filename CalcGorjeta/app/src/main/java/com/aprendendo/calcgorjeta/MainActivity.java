@@ -1,4 +1,4 @@
-package com.aprendendo.classesemetodosnapratica;
+package com.aprendendo.calcgorjeta;
 
 import android.os.Bundle;
 
@@ -15,67 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
-        Keitaro keitaro = new Keitaro();
-        keitaro.direitoDeveres();
-
-
-
-
-
-
-
-
-//        ContaBancaria cb = new ContaBancaria(001, 20.00);
-//        cb = new ContaBancaria();
-//        System.out.println();
-//
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //
-//        Pessoa p = new Pessoa();
-//        p.exibirDados("Iori");
-//        p.exibirDados(5,"Iori");
-
-
-
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-
-        /* Funcionario funcionario = new Funcionario();
-        funcionario.nome = "Felipe";
-        funcionario.salario = 3500.00;
-
-        double ss = funcionario.recuperarSalario(150.0, 20);
-        System.out.println(ss);
-
-        */
-
-//        Casa casa = new Casa();
-//        casa.cor = "verde";
-//        System.out.println(casa.cor);
-//        casa.abrirPorta();
-
     }
-
-
-
 }

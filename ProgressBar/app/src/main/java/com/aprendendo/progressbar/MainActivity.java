@@ -1,6 +1,8 @@
-package com.aprendendo.classesemetodosnapratica;
+package com.aprendendo.progressbar;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ProgressBar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,72 +12,35 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ProgressBar progressBarH, progressBarC;
+    private Integer progresso = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
-        Keitaro keitaro = new Keitaro();
-        keitaro.direitoDeveres();
-
-
-
-
-
-
-
-
-//        ContaBancaria cb = new ContaBancaria(001, 20.00);
-//        cb = new ContaBancaria();
-//        System.out.println();
-//
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //
-//        Pessoa p = new Pessoa();
-//        p.exibirDados("Iori");
-//        p.exibirDados(5,"Iori");
-
-
-
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        progressBarH = findViewById(R.id.progressBarH);
+        progressBarC = findViewById(R.id.progressBarC);
 
-
-        /* Funcionario funcionario = new Funcionario();
-        funcionario.nome = "Felipe";
-        funcionario.salario = 3500.00;
-
-        double ss = funcionario.recuperarSalario(150.0, 20);
-        System.out.println(ss);
-
-        */
-
-//        Casa casa = new Casa();
-//        casa.cor = "verde";
-//        System.out.println(casa.cor);
-//        casa.abrirPorta();
+        progressBarC.setVisibility(View.GONE);
 
     }
+    public void carregar(View view){
+
+        this.progresso++;
+        progressBarH.setProgress(this.progresso);
+        progressBarC.setVisibility(View.VISIBLE);
+        if (this.progresso.equals(10)){
+            progressBarC.setVisibility(View.GONE);
+        }
 
 
+    }
 
 }

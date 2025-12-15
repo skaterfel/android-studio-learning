@@ -1,6 +1,10 @@
-package com.aprendendo.classesemetodosnapratica;
+package com.aprendendo.toast;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,44 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
-        Keitaro keitaro = new Keitaro();
-        keitaro.direitoDeveres();
-
-
-
-
-
-
-
-
-//        ContaBancaria cb = new ContaBancaria(001, 20.00);
-//        cb = new ContaBancaria();
-//        System.out.println();
-//
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //
-//        Pessoa p = new Pessoa();
-//        p.exibirDados("Iori");
-//        p.exibirDados(5,"Iori");
-
-
-
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -60,22 +26,27 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        /* Funcionario funcionario = new Funcionario();
-        funcionario.nome = "Felipe";
-        funcionario.salario = 3500.00;
-
-        double ss = funcionario.recuperarSalario(150.0, 20);
-        System.out.println(ss);
-
-        */
-
-//        Casa casa = new Casa();
-//        casa.cor = "verde";
-//        System.out.println(casa.cor);
-//        casa.abrirPorta();
-
     }
 
+    public void abrirToast(View view)
+    {
 
+        ImageView img = new ImageView(getApplicationContext());
+        img.setImageResource(android.R.drawable.star_big_off);
 
+        TextView txtV = new TextView(getApplicationContext());
+        txtV.setText("Olá TOST - MK");
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(img);
+        toast.show();
+
+        /*
+        Toast.makeText(getApplicationContext(),
+                "Abrindo TOAST",
+                Toast.LENGTH_LONG)
+                .show();
+         */
+    }
 }
