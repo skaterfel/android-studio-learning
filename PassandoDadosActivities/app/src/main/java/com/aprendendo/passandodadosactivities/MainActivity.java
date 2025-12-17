@@ -33,8 +33,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), SegundaActivity.class);
                 // Passar Dados
+
+                //instanciar objeto
+                Usuario usuario = new Usuario("Felipe", "felipe@trugdz.com");
+
+
                 intent.putExtra("nome", "Iori Bueno de Melo");
                 intent.putExtra("idade", 5);
+
+                intent.putExtra("objeto", usuario);
+
+
 
                 startActivity(intent);
 
